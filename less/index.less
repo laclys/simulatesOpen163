@@ -32,6 +32,9 @@ i,a{
     text-decoration: none;
     font-style: normal;
 }
+.hide{
+    display: none;
+}
 ::selection{
     background-color: #286a46;
     color: #fff;
@@ -70,14 +73,18 @@ body{
     }
     ul.fr_top_ul{
         .fr;
-        padding-top: 11px;
-        inline-size: 36px;
-        li{
+        height: 36px;
+        .pos(r);
+        li{ 
+            height: 36px - 11;
+            padding-top: 11px;
             font-size: 12px;
             line-height: 14px;
             color: #666;
             .fl;
-            padding: 0 6px;
+            // padding: 0 6px;
+            padding-left: 6px;
+            padding-right: 6px;
             border-left: 1px solid #d9d9d9;
             cursor: pointer;
         }
@@ -87,11 +94,62 @@ body{
                  width: 8px;
                  height: 4px;
                  padding-bottom: 2px;
-
              }
+             &:hover{
+                 background: #fff;
+             }
+            .pos(r);
+            ul.ul_menu{
+                top: 100%;
+                left: 0;
+                background-color: #fff;
+                right: 0;
+                border-top: none;
+                box-shadow: 1px 2px 1px rgba(0,0,0,.2);
+                .pos(a);
+                li{
+                    color: #666;
+                    background-color: #fff;
+                    text-indent: 8px;
+                    height: 24px;
+                    width: 88%;
+                    &:hover{
+                        color: #09924b;
+                        background-color: #ebebeb
+
+                    }
+                }
+            }
         }
         li:nth-child(3){
             color: #09924b;
         }
+    }
+    .fr_login_text{
+        .fr;
+        padding-top: 11px;
+        span{
+            font-size: 12px;
+            line-height: 14px;
+            color: #666; 
+            .fl;
+            padding-right: 11px;
+        }
+        span:nth-child(2):hover{
+            color: #09924b;
+            cursor: pointer;
+        }
+    }
+    .fr_login_ok{
+        .fr;
+        padding-top: 11px;
+        inline-size: 36px;
+    }
+        span{
+        font-size: 12px;
+        line-height: 14px;
+        color: #666; 
+        .fl;
+        padding-right: 11px;
     }
 }

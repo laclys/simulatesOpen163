@@ -25,6 +25,9 @@ a {
   text-decoration: none;
   font-style: normal;
 }
+.hide {
+  display: none;
+}
 ::selection {
   background-color: #286a46;
   color: #fff;
@@ -63,26 +66,80 @@ body {
 }
 .top_nav ul.fr_top_ul {
   float: right;
-  padding-top: 11px;
-  inline-size: 36px;
+  height: 36px;
+  position: relative;
 }
 .top_nav ul.fr_top_ul li {
+  height: 25px;
+  padding-top: 11px;
   font-size: 12px;
   line-height: 14px;
   color: #666;
   float: left;
-  padding: 0 6px;
+  padding-left: 6px;
+  padding-right: 6px;
   border-left: 1px solid #d9d9d9;
   cursor: pointer;
 }
 .top_nav ul.fr_top_ul li:nth-child(1) {
   color: #09924b;
+  position: relative;
 }
 .top_nav ul.fr_top_ul li:nth-child(1) img {
   width: 8px;
   height: 4px;
   padding-bottom: 2px;
 }
+.top_nav ul.fr_top_ul li:nth-child(1):hover {
+  background: #fff;
+}
+.top_nav ul.fr_top_ul li:nth-child(1) ul.ul_menu {
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  right: 0;
+  border-top: none;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+.top_nav ul.fr_top_ul li:nth-child(1) ul.ul_menu li {
+  color: #666;
+  background-color: #fff;
+  text-indent: 8px;
+  height: 24px;
+  width: 88%;
+}
+.top_nav ul.fr_top_ul li:nth-child(1) ul.ul_menu li:hover {
+  color: #09924b;
+  background-color: #ebebeb;
+}
 .top_nav ul.fr_top_ul li:nth-child(3) {
   color: #09924b;
+}
+.top_nav .fr_login_text {
+  float: right;
+  padding-top: 11px;
+}
+.top_nav .fr_login_text span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #666;
+  float: left;
+  padding-right: 11px;
+}
+.top_nav .fr_login_text span:nth-child(2):hover {
+  color: #09924b;
+  cursor: pointer;
+}
+.top_nav .fr_login_ok {
+  float: right;
+  padding-top: 11px;
+  inline-size: 36px;
+}
+.top_nav span {
+  font-size: 12px;
+  line-height: 14px;
+  color: #666;
+  float: left;
+  padding-right: 11px;
 }
