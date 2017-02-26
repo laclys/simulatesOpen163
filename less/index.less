@@ -216,6 +216,7 @@ body{
             line-height: 32px;
             color: #999999;
             .fl;
+            outline: none;
         }
         .sreach_btn{
             width: 40px;
@@ -224,8 +225,34 @@ body{
             background: #ef9632;
             text-align: center;
             .fl;
+            &:hover{
+                background: orange;
+            }
             span{
                 color: #fff;
+            }
+        }
+    }
+}
+.index_menu{
+    background: #286a46;
+    height: 40px;
+    box-shadow: 0px 2px 1px #bbbbbb;
+    ul.inner{
+        li{
+            line-height: 38px;
+            height: 38px;
+            padding-top: 1px;
+            padding-bottom: 1px;
+            padding-left: 13px;
+            padding-right: 12px;
+            color:white;
+            font-size: 16px;
+            &:hover{
+                background: #2e9057;
+            }
+            a{
+                color:white;
             }
         }
     }
