@@ -306,3 +306,36 @@ body {
 .sub_menu ul.inner li div.block_menu .line2 a {
   color: #09924b;
 }
+.tab_img_box {
+  height: 425px;
+  background: #000;
+  border-top: 1px solid #434343;
+  position: relative;
+}
+.tab_img_box div.inner {
+  height: 425px;
+  position: relative;
+}
+.tab_img_box div.inner .bigPic img {
+  width: 960px;
+  height: 425px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.tab_img_box div.inner .bigPic ul {
+  width: 720px;
+  height: 60px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.tab_img_box div.inner .bigPic ul li {
+  width: 68px;
+  height: 43px;
+  border: 1px solid #999999;
+  float: left;
+  background: blue;
+  margin-right: 13px;
+  position: relative;
+}
