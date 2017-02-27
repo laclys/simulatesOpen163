@@ -58,6 +58,8 @@ a {
 }
 body.min_body {
   min-width: 960px;
+  overflow-x: hidden;
+  /*禁止横向滚轮*/
 }
 .inner {
   margin: 0 auto;
@@ -65,7 +67,6 @@ body.min_body {
 }
 body {
   width: 100%;
-  background: deepskyblue;
 }
 .top_nav {
   height: 36px;
@@ -238,4 +239,70 @@ body {
 }
 .index_menu ul.inner li a {
   color: white;
+}
+.sub_menu {
+  background: #ebebeb;
+  height: 24px;
+}
+.sub_menu ul.inner li {
+  line-height: 24px;
+  font-size: 12px;
+  margin-right: 18px;
+  position: relative;
+}
+.sub_menu ul.inner li p {
+  padding-right: 7px;
+  padding-left: 7px;
+}
+.sub_menu ul.inner li p a {
+  color: #666;
+}
+.sub_menu ul.inner li p:hover {
+  background: white;
+  height: 25px;
+  position: relative;
+  z-index: 10;
+}
+.sub_menu ul.inner li div.block_menu {
+  background: #fff;
+  width: 426px;
+  height: 188px;
+  box-shadow: 0 0 5px #ccc;
+  z-index: 9;
+  position: absolute;
+  top: 24px;
+  left: 0px;
+  padding-top: 12px;
+}
+.sub_menu ul.inner li div.block_menu .line1 {
+  height: 130px;
+  width: 1px;
+  position: absolute;
+  top: 20px;
+  left: 212px;
+  background: #eee;
+}
+.sub_menu ul.inner li div.block_menu .block_menu_content {
+  height: 154px;
+  width: 426px;
+}
+.sub_menu ul.inner li div.block_menu .block_menu_content a {
+  float: left;
+  line-height: 30px;
+  width: 200px;
+  color: #666;
+  padding-left: 12px;
+}
+.sub_menu ul.inner li div.block_menu .block_menu_content a:hover {
+  color: #09924b;
+}
+.sub_menu ul.inner li div.block_menu .line2 {
+  border-top: 1px solid #eee;
+  height: 32px;
+  line-height: 32px;
+  margin: 0 12px;
+  text-align: right;
+}
+.sub_menu ul.inner li div.block_menu .line2 a {
+  color: #09924b;
 }

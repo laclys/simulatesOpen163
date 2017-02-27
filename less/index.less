@@ -72,6 +72,7 @@ i,a{
 //----start----
 body.min_body{
     min-width:@minWidth;
+    overflow-x: hidden; /*禁止横向滚轮*/
 }
 .inner{
     margin: 0 auto;
@@ -79,7 +80,7 @@ body.min_body{
 }
 body{
     width: 100%;
-    background: deepskyblue;
+    // background: deepskyblue;
 }
 .top_nav{
     height: 36px;
@@ -239,6 +240,9 @@ body{
     height: 40px;
     box-shadow: 0px 2px 1px #bbbbbb;
     ul.inner{
+        //  background: #286a46;
+        //  box-shadow: 0 2px 1px #bbbbbb;
+        //  z-index: 999;
         li{
             line-height: 38px;
             height: 38px;
@@ -255,5 +259,85 @@ body{
                 color:white;
             }
         }
+    }
+}
+.sub_menu{
+    background: #ebebeb;
+    height: 24px;
+    ul.inner{
+        li{
+            line-height: 24px;
+            font-size: 12px;
+            // padding-right: 25px;
+            // padding-right: 7px;
+            // padding-left: 7px;
+            margin-right: 25px - 7px;
+            .pos(r);
+            // a{
+            //     color: #666;
+            // }
+            p{
+            padding-right: 7px;
+            padding-left: 7px;
+                a{
+                color: #666;
+                }
+            }
+            p:hover{
+                background: white;
+                height: 25px;
+                .pos(r);
+                z-index: 10;
+            }
+            div.block_menu{
+                background: #fff;
+                width: 426px;
+                height: 188px;
+                box-shadow: 0 0 5px #ccc;
+                z-index: 9;
+                .pos(a);
+                top: 24px;
+                left: 0px;
+                padding-top: 12px;
+                .line1{
+                    height: 130px;
+                    width: 1px;
+                    .pos(a);
+                    top:20px;
+                    left: 212px;
+                    background: #eee;
+                }
+                .block_menu_content{
+                    height: 154px;
+                    width: 426px;
+                    a{
+                        float: left;
+                        line-height: 30px;
+                        width: 200px;
+                        color: #666;
+                        padding-left: 12px;
+                        &:hover{
+                            color: #09924b;
+                        }
+                    }
+                }
+                .line2{
+                    border-top:1px solid #eee;
+                    height: 32px;
+                    line-height: 32px;
+                    margin: 0 12px;
+                    text-align: right;
+                    a{
+                        color: #09924b;
+                    }
+                }
+            }
+        }
+        // li:nth-child(1){
+        //     padding-left: 7px;
+        // }
+        // li:hover{
+        //     background: white;
+        // }
     }
 }
