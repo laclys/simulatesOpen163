@@ -458,3 +458,69 @@ body {
   position: relative;
   top: 4px;
 }
+.open_class_plan {
+  height: 413px;
+  background: pink;
+}
+.open_class_plan .inner {
+  height: 255px;
+  padding-top: 49px;
+  background: blue;
+}
+.open_class_plan .inner i {
+  line-height: 23px;
+  font-size: 23px;
+  color: #333846;
+  padding-right: 18px;
+}
+.open_class_plan .inner span.open_class_plan_nav {
+  line-height: 12px;
+  font-size: 12px;
+  margin-right: 22px;
+  color: #333846;
+  border-radius: 4px;
+  transition: .25s;
+}
+.open_class_plan .inner span.open_class_plan_nav:hover {
+  cursor: pointer;
+  background: #206740;
+}
+.open_class_plan .inner ul.course_list1 {
+  height: 220px;
+}
+.open_class_plan .inner ul.course_list1 li {
+  margin-top: 18px;
+  width: 271px;
+  position: relative;
+}
+.open_class_plan .inner ul.course_list1 li .pic_course {
+  height: 150px;
+  width: 270px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.open_class_plan .inner ul.course_list1 li .pic_course span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 60px;
+  height: 22px;
+  background: #dd8700;
+  color: #fff;
+  line-height: 22px;
+  font-size: 12px;
+  z-index: 9;
+}
+.open_class_plan .inner ul.course_list1 li .pic_course img {
+  height: 150px;
+  width: 270px;
+  transform: scale(1);
+  transition: 1s;
+}
+.open_class_plan .inner ul.course_list1 li .pic_course img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
