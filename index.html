@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <title>open163</title>
     <link rel="stylesheet" href="./css/index.css">
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/index.js"></script>
 
 </head>
 
@@ -28,7 +30,21 @@
                         <li class="hide">退出</li>
                     </ul>
                 </li>
-                <li>+ 关注我们</li>
+                <li id="about_us">+ 关注我们
+                    <div class="weibo_weixin clearfix hide">
+                        <a href="javascript:;">
+                            <div class="weibo"></div>
+                        </a>
+                        <a href="javascript:;">
+                            <div class="weixin">
+                                <div class="hide">
+                                    <img src="./img/winxin_code.jpg" alt="">
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                </li>
                 <li>客户端下载</li>
             </ul>
             <div class="fr_login_text">
@@ -46,10 +62,23 @@
                 <a href="javascript:;" class="logo">网易公开课</a>
             </h1>
             <div class="sreach">
-                <input type="text" name="" value="  搜素课程、视频、公开课策划">
+                <input type="text" name="" value="  搜素课程、视频、公开课策划" id="sreach_content">
                 <div class="sreach_btn">
                     <span class="icon-search"></span>
                 </div>
+                <ul class="sreachList hide">
+                    <li>娱乐是如何引导伟大的<i> - 想象你是一个原始人</i></li>
+                    <li>天墓的秘密<i> - 黄金面膜的古墓怎么样</i></li>
+                    <li>我从肥皂剧里学到的人生道理<i> - 分分钟教做人</i></li>
+                    <li>Ted<i> - 无国界分享的趣味演讲 </i></li>
+                    <li>电子表格之父<i> - 认识电子表和开山鼻祖</i></li>
+                    <li>心理学<i> - 别想了，看开点</i></li>
+                    <li>历史<i> - 名人野史秘闻</i></li>
+                    <li>分钟物理<i> - 带你领略趣闻物理学</i></li>
+                    <li>天气预报为什么不准<i> - 专家靠谱吗</i></li>
+                    <li>数学<i> - 数学是科学的女王</i></li>
+
+                </ul>
             </div>
         </div>
     </div>
@@ -88,9 +117,9 @@
         </ul>
     </div>
     <div class="sub_menu">
-        <ul class="inner clclearfix">
+        <ul class="inner clearfix">
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">文学</a>
                 </p>
                 <div class="block_menu hide">
@@ -113,7 +142,7 @@
                 </div>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">数学</a>
                 </p>
                 <div class="block_menu hide">
@@ -136,72 +165,72 @@
                 </div>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">哲学</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">语言</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">社会</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">历史</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">商业</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">传媒</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">医学/健康</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">美术/建筑</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">工程技术</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">法律/政治</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">宗教</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">心理学</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">教学/学习</a>
                 </p>
             </li>
             <li class="fl">
-                <p>
+                <p class="subject">
                     <a href="javascript:;">学校/机构</a>
                 </p>
             </li>
@@ -333,63 +362,43 @@
                     <ul class="rank_list">
                         <li class="clearfix">
                             <div class="block_num fl orange_num">01</div>
-                            <span class="fl">性格的迷思--你究竟是谁?</span>
-                            <span class="fr">59.2万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">电影最TOP: 一口气看完本届奥斯卡最佳影片</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl orange_num">02</div>
-                            <span class="fl">你有拖延症吗?</span>
-                            <span class="fr">49.1万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">马云是如何完美诠释”失败乃成功之母“的！</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl orange_num">03</div>
-                            <span class="fl">如何掌控你的自由时间</span>
-                            <span class="fr">47.1万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">巴黎危险的烟雾</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">04</div>
-                            <span class="fl">爱情应有的样子</span>
-                            <span class="fr">46.8万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">桐桐演奕-第八期</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">05</div>
-                            <span class="fl">马云斯坦福大学演讲：想法与技术可以改变世界</span>
-                            <span class="fr">43.8万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">桐桐演奕-第七期</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">06</div>
-                            <span class="fl">如何成为一个更好的交谈者?</span>
-                            <span class="fr">38.4万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">励志跑酷：我是如何成为一个灵活的胖子的</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">07</div>
-                            <span class="fl">被拒100天</span>
-                            <span class="fr">34.2万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">大海到底有多深</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">08</div>
-                            <span class="fl">什么是积极心理学？</span>
-                            <span class="fr">34.0万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">解密十大变聪明的办法</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">09</div>
-                            <span class="fl">BBC评选21世纪以来100部最伟大的电影</span>
-                            <span class="fr">28.4万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">运动成瘾是种病，得治</span>
                         </li>
                         <li class="clearfix">
                             <div class="block_num fl">10</div>
-                            <span class="fl">为什么我们需要与陌生人交流</span>
-                            <span class="fr">18.5万</span>
-                            <img src="./img/play_arrow.png" alt="" ondragstart="return false;" class="fr">
+                            <span class="fl w200">尼泊尔大地震（2）</span>
                         </li>
                     </ul>
                 </div>
@@ -410,6 +419,38 @@
                             <span>课随你变</span>
                             <img src="./img/op1.jpg" alt="">
                         </div>
+                        <p class="title_course">少年，来一套大保健呗</p>
+                        <p class="sub_title_course">大保健宝典，教你如何保养你的健康。</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="javascript:;">
+                        <div class="pic_course">
+                            <span>趣味课堂</span>
+                            <img src="./img/op2.jpg" alt="">
+                        </div>
+                        <p class="title_course">呆萌特工,拯救世界</p>
+                        <p class="sub_title_course">看倒霉特工熊如何拯救人类,逢熊化吉!</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="javascript:;">
+                        <div class="pic_course">
+                            <span>课随你变</span>
+                            <img src="./img/op3.jpg" alt="">
+                        </div>
+                        <p class="title_course">逃离北上广，雾霾远离我</p>
+                        <p class="sub_title_course">远离这个被雾霾包围的城市，去一个未知但美好的目的地。</p>
+                    </a>
+                </li>
+                <li class="fl">
+                    <a href="javascript:;">
+                        <div class="pic_course">
+                            <span>课随你变</span>
+                            <img src="./img/op4.jpg" alt="">
+                        </div>
+                        <p class="title_course">2016年度十大TED演讲</p>
+                        <p class="sub_title_course">TED演讲充满了不同于我们常人观念的独特观点和新奇视角，来看小编整理的2016年度十大TED演讲。</p>
                     </a>
                 </li>
             </ul>

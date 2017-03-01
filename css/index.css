@@ -125,6 +125,7 @@ body {
   right: 0;
   border-top: none;
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 9;
   position: absolute;
 }
 .top_nav ul.fr_top_ul li:nth-child(1) ul.ul_menu li {
@@ -137,6 +138,56 @@ body {
 .top_nav ul.fr_top_ul li:nth-child(1) ul.ul_menu li:hover {
   color: #09924b;
   background-color: #ebebeb;
+}
+.top_nav ul.fr_top_ul li:nth-child(2):hover {
+  background: #fff;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin {
+  width: 90px;
+  height: 45px;
+  background: #fff;
+  box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
+  z-index: 9;
+  position: absolute;
+  top: 100%;
+  left: 84px;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin .weibo {
+  width: 25px;
+  height: 25px;
+  background: url(../img/sprite.png) -60px -20px;
+  position: relative;
+  display: block;
+  top: 8px;
+  left: 14px;
+  float: left;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin .weibo:hover {
+  background-position: -60px -51px;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin .weixin {
+  width: 25px;
+  height: 25px;
+  background: url(../img/sprite.png) -122px -20px;
+  position: relative;
+  display: block;
+  top: 8px;
+  left: 29px;
+  float: left;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin .weixin:hover {
+  background-position: -122px -51px;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin .weixin div {
+  width: 128px;
+  height: 128px;
+  position: relative;
+  top: 39px;
+  left: -54px;
+}
+.top_nav ul.fr_top_ul li:nth-child(2) .weibo_weixin .weixin div img {
+  width: 128px;
+  height: 128px;
 }
 .top_nav ul.fr_top_ul li:nth-child(3) {
   color: #09924b;
@@ -193,6 +244,30 @@ body {
   position: absolute;
   top: 10px;
   right: 0;
+}
+.logo_sreach .sreach ul {
+  height: 320px;
+  width: 388px;
+  position: absolute;
+  background: white;
+  z-index: 9;
+  top: 35px;
+  left: 0px;
+  border: 1px solid #ddd;
+}
+.logo_sreach .sreach ul li {
+  height: 32px;
+  line-height: 32px;
+  font-size: 14px;
+  text-indent: 1em;
+  color: #252525;
+  cursor: pointer;
+}
+.logo_sreach .sreach ul li i {
+  color: #949494;
+}
+.logo_sreach .sreach ul li:hover {
+  background: #ddd;
 }
 .logo_sreach .sreach input {
   width: 347px;
@@ -452,6 +527,9 @@ body {
   font-size: 9px;
   padding: 0 2px;
 }
+.tab_img_box div.inner .left_content .content_rank ul.rank_list li span.w200 {
+  width: 200px;
+}
 .tab_img_box div.inner .left_content .content_rank ul.rank_list li img {
   width: 9px;
   height: 10px;
@@ -460,12 +538,12 @@ body {
 }
 .open_class_plan {
   height: 413px;
-  background: pink;
+  background: #fafafa;
 }
 .open_class_plan .inner {
   height: 255px;
   padding-top: 49px;
-  background: blue;
+  background: #fafafa;
 }
 .open_class_plan .inner i {
   line-height: 23px;
@@ -490,7 +568,8 @@ body {
 }
 .open_class_plan .inner ul.course_list1 li {
   margin-top: 18px;
-  width: 271px;
+  margin-right: 33px;
+  width: 270px;
   position: relative;
 }
 .open_class_plan .inner ul.course_list1 li .pic_course {
@@ -513,6 +592,7 @@ body {
   line-height: 22px;
   font-size: 12px;
   z-index: 9;
+  text-align: center;
 }
 .open_class_plan .inner ul.course_list1 li .pic_course img {
   height: 150px;
@@ -523,4 +603,22 @@ body {
 .open_class_plan .inner ul.course_list1 li .pic_course img:hover {
   transform: scale(1.1);
   transition: 1s;
+}
+.open_class_plan .inner ul.course_list1 li p.title_course {
+  font-size: 18px;
+  position: absolute;
+  top: 168px;
+  color: #333333;
+}
+.open_class_plan .inner ul.course_list1 li p.sub_title_course {
+  font-size: 12px;
+  color: #999999;
+  position: absolute;
+  top: 199px;
+}
+.open_class_plan .inner ul.course_list1 li:nth-child(2) span {
+  background: #4a9bac;
+}
+.open_class_plan .inner ul.course_list1 li:nth-child(4) {
+  margin-right: 0;
 }

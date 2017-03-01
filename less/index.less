@@ -153,6 +153,7 @@ body {
                 right: 0;
                 border-top: none;
                 box-shadow: 1px 2px 1px rgba(0, 0, 0, .2);
+                z-index: 9;
                 .pos(a);
                 li {
                     color: #666;
@@ -163,6 +164,59 @@ body {
                     &:hover {
                         color: #09924b;
                         background-color: #ebebeb
+                    }
+                }
+            }
+        }
+        li:nth-child(2){
+            &:hover {
+                background: #fff;
+            } 
+            .weibo_weixin{
+                width: 90px;
+                height: 45px;
+                background: #fff;
+                box-shadow: 1px 2px 1px rgba(0, 0, 0, .2);
+                z-index: 9;
+                .pos(a);
+                top: 100%;
+                left: 84px;
+                .weibo{
+                    width: 25px;
+                    height: 25px; 
+                    background: url(../img/sprite.png) -60px -20px;
+                    .pos(r);
+                    display: block;
+                    top: 8px;
+                    left: 14px;
+                    .fl;
+                    &:hover{
+                        background-position: -60px -51px;
+                    }
+                }
+                .weixin{
+                    width: 25px;
+                    height: 25px; 
+                    background: url(../img/sprite.png) -122px -20px;
+                    .pos(r);
+                    display: block;
+                    top: 8px;
+                    left: 29px;
+                    .fl;
+                    &:hover{
+                        background-position: -122px -51px;
+                    }
+                    div{
+                        width: 128px;
+                        height: 128px;;
+                        // background: blue;
+                        .pos(r);
+                        top: 39px;
+                        left: -54px;
+                        img{
+                            width: 128px;
+                            height: 128px;;
+                        }
                     }
                 }
             }
@@ -224,6 +278,30 @@ body {
         .pos(a);
         top: 38px - 28px;
         right: 0;
+        ul{
+            height: 32px * 10;
+            width: 388px;
+            .pos(a);
+            background: white;
+            z-index: 9;
+            top: 35px;
+            left: 0px;
+            border: 1px solid #ddd;
+            li{
+                height: 32px;
+                line-height: 32px;
+                font-size: 14px;
+                text-indent: 1em;
+                color: #252525;
+                cursor: pointer;
+                i{
+                    color: #949494;
+                }
+                &:hover{
+                    background: #ddd;
+                }
+            }
+        }
         input {
             width: 347px;
             height: 32px;
@@ -510,6 +588,9 @@ body {
                             font-size: 9px;
                             padding: 0 2px;
                         }
+                        span.w200{
+                            width: 200px;
+                        }
                         img{
                             width: 9px;
                             height: 10px;
@@ -525,11 +606,11 @@ body {
 }
 .open_class_plan{
     height: 413px;
-    background: pink;
+    background: #fafafa;
     .inner{
         height: 255px;
         padding-top: 49px;
-        background: blue;
+        background: #fafafa;
         i{
             line-height: 23px;
             font-size: 23px;
@@ -554,7 +635,8 @@ body {
             // width: 271px;
             li{
                 margin-top: 18px;
-                width: 271px;
+                margin-right: 33px;
+                width: 270px;
                 .pos(r);
                 .pic_course{
                     height: 150px;
@@ -575,6 +657,7 @@ body {
                         line-height: 22px;
                         font-size: 12px;
                         z-index: 9;
+                        text-align: center;
                     }
                     img{
                         height: 150px;
@@ -588,6 +671,27 @@ body {
                     }
 
                 }
+                p.title_course{
+                    // padding-top: 18px;
+                    font-size: 18px;
+                    .pos(a);
+                    top: 168px;
+                    color: #333333;
+                }
+                p.sub_title_course{
+                    font-size: 12px;
+                    color: #999999;
+                    .pos(a);
+                    top: 199px;
+                }
+            }
+            li:nth-child(2){
+                span{
+                    background: #4a9bac;
+                    }
+            }
+            li:nth-child(4){
+                margin-right: 0;
             }
 
         }
