@@ -44,4 +44,52 @@ $(function () {
     }, function () {
         $(this).find('.block_menu').addClass('hide');
     });
+    //大图选项卡
+    var tabPicTitleArr = [
+        '你发过“短性息”吗？',
+        '天墓的秘密',
+        '肥皂剧教会我们的四个重要的道理',
+        '癌症早发现早治疗的新招',
+        '激动人心的吉他表演',
+        '纳米科技何去何从',
+        '性暴力的救赎之路',
+        '高薪岗位大揭秘'
+    ];
+    var box_categoryBPosY = [
+        '0px',
+        '-75px',
+        '0px',
+        '0px',
+        '0px',
+        '0px',
+        '0px',
+        '-175px'
+    ];
+    var tabPicSubArr = [
+        '科技能引发人类最恶劣的品性和行为，并放大，你发过这种信息吗？',
+        '喜玛拉雅山上，科学家发现了距今数千年的黄金面具和丝绸的石墓。',
+        '肥皂剧剧情跌宕起伏，看似超出实际生活，但它又来源于实际。',
+        '介绍通过纳米科技研发提早发现人体癌细胞的方法。',
+        '当弗拉门戈吉他与重金属碰撞，会产生怎样的神奇效果呢？',
+        '如果芯片变得小到不能再小了，纳米科技又将何去何从呢？',
+        '20年前，在学校舞会后，他竟强奸了她。20年后，他们坦诚感情路。',
+        '12场直播，解读互联网岗位成长轨迹'
+    ];
+    var ochangePic = $('#changePic');
+    var oBox_category = $('#box_category');
+    var oTabPicTitle = $('#tabPicTitle');
+    var oTabPicSub = $('#tabPicSub');
+    //--------
+    var aTabImgBtn = $('#tabImgUl').find('li');
+    aTabImgBtn.mouseover(function () {
+        console.log($(this).index());
+        ochangePic.attr('src', `./img/tagpic${$(this).index()}.jpg`);
+        oBox_category.css('background-position-y', box_categoryBPosY[$(this).index()-1]);
+        oTabPicTitle.html(tabPicTitleArr[$(this).index()-1]);
+        oTabPicSub.html(tabPicSubArr[$(this).index()-1]);
+        // $(this).find('a').css({'top':'-8px',});
+        aTabImgBtn.find('a').removeClass('smallPicOn');
+        $(this).find('a').addClass('smallPicOn');
+    });
+    //轮播图右边课程排名事件
 });
