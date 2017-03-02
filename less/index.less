@@ -177,7 +177,7 @@ body {
                 height: 45px;
                 background: #fff;
                 box-shadow: 1px 2px 1px rgba(0, 0, 0, .2);
-                z-index: 9;
+                z-index: 10;
                 .pos(a);
                 top: 100%;
                 left: 84px;
@@ -563,11 +563,16 @@ body {
                     height: 24px;
                     width: 60px - 7px;
                     // border-bottom: 3px solid #09924b;
-                    &:hover {
+                    /*&:hover {
                         border-bottom: 3px solid #09924b;
                         color: white;
                         cursor: pointer;
-                    }
+                    }*/
+                }
+                li.rankOn {
+                    border-bottom: 3px solid #09924b;
+                    color: white;
+                    cursor: pointer;
                 }
                 li:nth-child(1) {
                     margin-left: 65px;
@@ -664,6 +669,19 @@ body {
                 background: #206740;
             }
         }
+        span.open_class_plan_more {
+            line-height: 11px;
+            font-size: 11px;
+            color: #333846;
+            margin-left: 575px;
+        }
+        span.open_class_plan_doit {
+            line-height: 11px;
+            font-size: 11px;
+            a {
+                color: #206740;
+            }
+        }
         ul.course_list1 {
             height: 220px;
             // width: 271px;
@@ -726,6 +744,29 @@ body {
             li:nth-child(4) {
                 margin-right: 0;
             }
+        }
+    }
+}
+
+.fixed_ads {
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    width: 100%;
+    .pos(f);
+    bottom: 0;
+    left: 0;
+    .inner {
+        .pos(r);
+        img {
+            width: 1200px;
+        }
+        a{
+           width: 35px;
+           height: 35px;
+        //    background: blue;
+           .pos(a);
+           top: 0;
+           right: -16px; 
         }
     }
 }

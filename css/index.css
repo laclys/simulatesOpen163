@@ -147,7 +147,7 @@ body {
   height: 45px;
   background: #fff;
   box-shadow: 1px 2px 1px rgba(0, 0, 0, 0.2);
-  z-index: 9;
+  z-index: 10;
   position: absolute;
   top: 100%;
   left: 84px;
@@ -473,8 +473,13 @@ body {
   font-size: 12px;
   height: 24px;
   width: 53px;
+  /*&:hover {
+                        border-bottom: 3px solid #09924b;
+                        color: white;
+                        cursor: pointer;
+                    }*/
 }
-.tab_img_box div.inner .left_content ol li:hover {
+.tab_img_box div.inner .left_content ol li.rankOn {
   border-bottom: 3px solid #09924b;
   color: white;
   cursor: pointer;
@@ -569,6 +574,19 @@ body {
   cursor: pointer;
   background: #206740;
 }
+.open_class_plan .inner span.open_class_plan_more {
+  line-height: 11px;
+  font-size: 11px;
+  color: #333846;
+  margin-left: 575px;
+}
+.open_class_plan .inner span.open_class_plan_doit {
+  line-height: 11px;
+  font-size: 11px;
+}
+.open_class_plan .inner span.open_class_plan_doit a {
+  color: #206740;
+}
 .open_class_plan .inner ul.course_list1 {
   height: 220px;
 }
@@ -627,4 +645,25 @@ body {
 }
 .open_class_plan .inner ul.course_list1 li:nth-child(4) {
   margin-right: 0;
+}
+.fixed_ads {
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 9999;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.fixed_ads .inner {
+  position: relative;
+}
+.fixed_ads .inner img {
+  width: 1200px;
+}
+.fixed_ads .inner a {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  top: 0;
+  right: -16px;
 }

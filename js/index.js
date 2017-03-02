@@ -84,12 +84,34 @@ $(function () {
     aTabImgBtn.mouseover(function () {
         console.log($(this).index());
         ochangePic.attr('src', `./img/tagpic${$(this).index()}.jpg`);
-        oBox_category.css('background-position-y', box_categoryBPosY[$(this).index()-1]);
-        oTabPicTitle.html(tabPicTitleArr[$(this).index()-1]);
-        oTabPicSub.html(tabPicSubArr[$(this).index()-1]);
+        oBox_category.css('background-position-y', box_categoryBPosY[$(this).index() - 1]);
+        oTabPicTitle.html(tabPicTitleArr[$(this).index() - 1]);
+        oTabPicSub.html(tabPicSubArr[$(this).index() - 1]);
         // $(this).find('a').css({'top':'-8px',});
         aTabImgBtn.find('a').removeClass('smallPicOn');
         $(this).find('a').addClass('smallPicOn');
     });
     //轮播图右边课程排名事件
+    var oHotRank = $('#hot_rank');
+    var oNewRank = $('#new_rank');
+    var aRankRontentBox = $('.content_rank');
+    oHotRank.mouseover(function () {
+        $(this).addClass('rankOn');
+        oNewRank.removeClass('rankOn');
+        aRankRontentBox.eq(0).removeClass('hide');
+        aRankRontentBox.eq(1).addClass('hide');
+    });
+    oNewRank.mouseover(function () {
+        $(this).addClass('rankOn');
+        oHotRank.removeClass('rankOn');
+        aRankRontentBox.eq(1).removeClass('hide');
+        aRankRontentBox.eq(0).addClass('hide');
+    });
+    //关闭底部广告
+    $('.fixed_ads').click(
+        function(){
+            $(this).addClass('hide');
+        }
+    )
+
 });
