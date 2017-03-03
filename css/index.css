@@ -667,3 +667,44 @@ body {
   top: 0;
   right: -16px;
 }
+.recommend {
+  height: 430px;
+  background: pink;
+  position: relative;
+}
+.recommend .inner {
+  position: relative;
+}
+.recommend i {
+  line-height: 23px;
+  font-size: 23px;
+  color: #333846;
+  padding-right: 18px;
+}
+.recommend span.open_class_plan_nav {
+  line-height: 12px;
+  font-size: 12px;
+  margin-right: 22px;
+  color: #333846;
+  border-radius: 4px;
+  transition: .25s;
+}
+.recommend span.open_class_plan_nav:hover {
+  cursor: pointer;
+  background: #206740;
+}
+.recommend .recommend_left_box {
+  width: 380px;
+  height: 330px;
+  background: blue;
+  margin-top: 19px;
+  position: relative;
+}
+.recommend .recommend_right_box {
+  height: 350px;
+  width: 780px;
+  background: red;
+  position: absolute;
+  top: 43px;
+  right: 0;
+}
