@@ -775,7 +775,7 @@ body {
     height: 430px;
     background: pink;
     .pos(r);
-    .inner{
+    .inner {
         .pos(r);
     }
     i {
@@ -800,16 +800,93 @@ body {
     .recommend_left_box {
         width: 380px;
         height: 330px;
-        background: blue;
+        // background: blue;
         margin-top: 19px;
         .pos(r);
+        p.r_name {
+            height: 21px;
+            width: 100%;
+            .pos(a);
+            top: 247px;
+            left: 0px;
+            background: rgba(0, 0, 0, 0.7);
+            font-size: 14px;
+            line-height: 21px;
+            color: white;
+            padding-left: 7px;
+            box-sizing: border-box;
+        }
+        .r_detail {
+            font-size: 15px;
+            color: #333333;
+            line-height: 15px;
+            padding-top: 13px;
+        }
+        img.play_arr {
+            width: 10px;
+            height: 9px;
+            .pos(a);
+            top: 247px + 60px;
+            left: 2px;
+        }
+        i {
+            font-size: 11px;
+            padding-left: 20px;
+        }
     }
     .recommend_right_box {
         height: 350px;
         width: 780px;
-        background: red;
+        // background: red;
         .pos(a);
         top: 43px;
         right: 0;
+        li {
+            width: 180px;
+            height: 168px;
+            // background: yellow;
+            margin-right: 20px;
+            .fl;
+            .pos(r);
+            img {
+                width: 180px;
+                height: 100px;
+            }
+            div.black_box {
+                height: 18px;
+                width: 180px;
+                background: rgba(0, 0, 0, 0.7);
+                .pos(a);
+                top: 82px;
+                left: 0px;
+                span {
+                    font-size: 12px;
+                    line-height: 18px;
+                    padding-left: 6px;
+                    color: white;
+                    display: block;
+                    padding-bottom: 1px;
+                }
+            }
+            p {
+                font-size: 12px;
+                color: #333333;
+            }
+            img.play_arr {
+                width: 10px;
+                height: 9px;
+                margin-left: 2px;
+            }
+            i {
+                font-size: 11px;
+                color: #999999;
+            }
+        }
+        li:nth-child(4) {
+            margin-right: 0;
+        }
+        li:nth-child(8) {
+            margin-right: 0;
+        }
     }
 }

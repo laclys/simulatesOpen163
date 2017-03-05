@@ -696,15 +696,89 @@ body {
 .recommend .recommend_left_box {
   width: 380px;
   height: 330px;
-  background: blue;
   margin-top: 19px;
   position: relative;
+}
+.recommend .recommend_left_box p.r_name {
+  height: 21px;
+  width: 100%;
+  position: absolute;
+  top: 247px;
+  left: 0px;
+  background: rgba(0, 0, 0, 0.7);
+  font-size: 14px;
+  line-height: 21px;
+  color: white;
+  padding-left: 7px;
+  box-sizing: border-box;
+}
+.recommend .recommend_left_box .r_detail {
+  font-size: 15px;
+  color: #333333;
+  line-height: 15px;
+  padding-top: 13px;
+}
+.recommend .recommend_left_box img.play_arr {
+  width: 10px;
+  height: 9px;
+  position: absolute;
+  top: 307px;
+  left: 2px;
+}
+.recommend .recommend_left_box i {
+  font-size: 11px;
+  padding-left: 20px;
 }
 .recommend .recommend_right_box {
   height: 350px;
   width: 780px;
-  background: red;
   position: absolute;
   top: 43px;
   right: 0;
+}
+.recommend .recommend_right_box li {
+  width: 180px;
+  height: 168px;
+  margin-right: 20px;
+  float: left;
+  position: relative;
+}
+.recommend .recommend_right_box li img {
+  width: 180px;
+  height: 100px;
+}
+.recommend .recommend_right_box li div.black_box {
+  height: 18px;
+  width: 180px;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  top: 82px;
+  left: 0px;
+}
+.recommend .recommend_right_box li div.black_box span {
+  font-size: 12px;
+  line-height: 18px;
+  padding-left: 6px;
+  color: white;
+  display: block;
+  padding-bottom: 1px;
+}
+.recommend .recommend_right_box li p {
+  font-size: 12px;
+  color: #333333;
+}
+.recommend .recommend_right_box li img.play_arr {
+  width: 10px;
+  height: 9px;
+  margin-left: 2px;
+}
+.recommend .recommend_right_box li i {
+  font-size: 11px;
+  color: #999999;
+}
+.recommend .recommend_right_box li:nth-child(4) {
+  margin-right: 0;
+}
+.recommend .recommend_right_box li:nth-child(8) {
+  margin-right: 0;
 }
