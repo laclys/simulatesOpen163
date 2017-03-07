@@ -109,9 +109,28 @@ $(function () {
     });
     //关闭底部广告
     $('.fixed_ads').click(
-        function(){
+        function () {
             $(this).addClass('hide');
         }
-    )
-
+    );
+    //slider事件
+    $(window).scroll(function () {
+        //    console.log($(this));
+        console.log($(this).scrollTop());
+        if ($(this).scrollTop() != 0) {
+            $('#slider_box3').removeClass('hide');
+        } else {
+            $('#slider_box3').addClass('hide');
+        }
+    });
+    //回到顶部
+    $('#slider_box3').click(function () {
+        $(window).scrollTop(0);
+    });
+    //app二维码移入移出
+    $('#slider_box1').hover(function () {
+        $('#slider_box1 a').removeClass('hide');
+    }, function () {
+        $('#slider_box1 a').addClass('hide');
+    })
 });

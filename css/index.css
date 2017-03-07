@@ -900,6 +900,7 @@ body {
   position: absolute;
   top: 0;
   right: -65px;
+  cursor: pointer;
 }
 .slider .inner div.s_box .sub_box {
   width: 60px;
@@ -908,6 +909,10 @@ body {
   background: white;
   box-sizing: border-box;
   border: 1px solid #e8e8e8;
+}
+.slider .inner div.s_box .sub_box:hover {
+  background: #e8e8e8;
+  border-color: #dadada;
 }
 .slider .inner div.s_box .sub_box:first-child {
   margin: 0;
@@ -926,4 +931,20 @@ body {
   width: 50px;
   height: 50px;
   background: url(../img/slider.png) 2px 52px;
+}
+.slider .inner div.s_box #slider_box1 {
+  position: relative;
+}
+.slider .inner div.s_box #slider_box1 a {
+  width: 133px;
+  height: 150px;
+  background: white;
+  position: absolute;
+  top: 0;
+  left: -136px;
+  text-align: center;
+}
+.slider .inner div.s_box #slider_box1 a span {
+  font-size: 12px;
+  color: #000000;
 }
