@@ -669,7 +669,7 @@ body {
 }
 .recommend {
   height: 430px;
-  background: pink;
+  background: #fafafa;
   position: relative;
 }
 .recommend .inner {
@@ -698,6 +698,19 @@ body {
   height: 330px;
   margin-top: 19px;
   position: relative;
+}
+.recommend .recommend_left_box div.img_box {
+  width: 380px;
+  height: 268px;
+  overflow: hidden;
+}
+.recommend .recommend_left_box div.img_box img {
+  transform: scale(1);
+  transition: 1s;
+}
+.recommend .recommend_left_box div.img_box img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 .recommend .recommend_left_box p.r_name {
   height: 21px;
@@ -740,12 +753,24 @@ body {
   width: 180px;
   height: 168px;
   margin-right: 20px;
+  cursor: pointer;
   float: left;
   position: relative;
 }
-.recommend .recommend_right_box li img {
+.recommend .recommend_right_box li div.recommend_right_img {
   width: 180px;
   height: 100px;
+  overflow: hidden;
+}
+.recommend .recommend_right_box li div.recommend_right_img img {
+  width: 180px;
+  height: 100px;
+  transform: scale(1);
+  transition: 1s;
+}
+.recommend .recommend_right_box li div.recommend_right_img img:hover {
+  transform: scale(1.1);
+  transition: 1s;
 }
 .recommend .recommend_right_box li div.black_box {
   height: 18px;
@@ -781,4 +806,124 @@ body {
 }
 .recommend .recommend_right_box li:nth-child(8) {
   margin-right: 0;
+}
+.guess {
+  height: 247px;
+  background: #fafafa;
+  position: relative;
+}
+.guess .inner {
+  position: relative;
+}
+.guess i {
+  line-height: 23px;
+  font-size: 23px;
+  color: #333846;
+  padding-right: 18px;
+}
+.guess span.open_class_plan_nav {
+  line-height: 12px;
+  font-size: 12px;
+  margin-right: 6px;
+  color: #333846;
+  border-radius: 4px;
+  transition: .25s;
+}
+.guess a.guess_login {
+  line-height: 12px;
+  font-size: 12px;
+  margin-right: 22px;
+  color: white;
+  border-radius: 4px;
+  transition: .25s;
+  background: #206740;
+}
+.guess span.open_class_plan_more {
+  line-height: 11px;
+  font-size: 11px;
+  color: #333846;
+  margin-left: 737px;
+}
+.guess span.open_class_plan_doit {
+  line-height: 11px;
+  font-size: 11px;
+}
+.guess span.open_class_plan_doit a {
+  color: #206740;
+}
+.guess .guess_list {
+  height: 150px;
+  margin-top: 18px;
+}
+.guess .guess_list li {
+  width: 180px;
+  margin-right: 20px;
+  cursor: pointer;
+  float: left;
+}
+.guess .guess_list li div {
+  width: 180px;
+  height: 100px;
+  overflow: hidden;
+}
+.guess .guess_list li div img {
+  transform: scale(1);
+  transition: 1s;
+}
+.guess .guess_list li div img:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+.guess .guess_list li p {
+  width: 155px;
+  margin-top: 10px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #333333;
+}
+.guess .guess_list li:last-child {
+  margin-right: 0px;
+}
+.slider {
+  z-index: 9999;
+}
+.slider .inner {
+  height: 30px;
+  position: fixed;
+  top: 30px;
+  left: 0;
+  right: 0;
+}
+.slider .inner div.s_box {
+  width: 60px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  right: -65px;
+}
+.slider .inner div.s_box .sub_box {
+  width: 60px;
+  height: 60px;
+  margin: 10px 0;
+  background: white;
+  box-sizing: border-box;
+  border: 1px solid #e8e8e8;
+}
+.slider .inner div.s_box .sub_box:first-child {
+  margin: 0;
+}
+.slider .inner div.s_box .box_content1 {
+  width: 50px;
+  height: 50px;
+  background: url(../img/slider.png) 5px 5px;
+}
+.slider .inner div.s_box .box_content2 {
+  width: 50px;
+  height: 50px;
+  background: url(../img/slider.png) 5px 105px;
+}
+.slider .inner div.s_box .box_content3 {
+  width: 50px;
+  height: 50px;
+  background: url(../img/slider.png) 2px 52px;
 }
