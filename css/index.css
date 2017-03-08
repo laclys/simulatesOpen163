@@ -886,8 +886,6 @@ body {
 }
 .slider .inner {
   height: 30px;
-  background: blue;
-  opacity: 0.3;
   position: fixed;
   top: 38px;
   left: 0;
