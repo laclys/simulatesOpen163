@@ -884,13 +884,12 @@ body {
 .guess .guess_list li:last-child {
   margin-right: 0px;
 }
-.slider {
-  z-index: 9999;
-}
 .slider .inner {
   height: 30px;
+  background: blue;
+  opacity: 0.3;
   position: fixed;
-  top: 30px;
+  top: 38px;
   left: 0;
   right: 0;
 }
