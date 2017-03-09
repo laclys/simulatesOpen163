@@ -82,7 +82,7 @@ $(function () {
     //--------
     var aTabImgBtn = $('#tabImgUl').find('li');
     aTabImgBtn.mouseover(function () {
-        console.log($(this).index());
+        // console.log($(this).index());
         ochangePic.attr('src', `./img/tagpic${$(this).index()}.jpg`);
         oBox_category.css('background-position-y', box_categoryBPosY[$(this).index() - 1]);
         oTabPicTitle.html(tabPicTitleArr[$(this).index() - 1]);
@@ -116,7 +116,7 @@ $(function () {
     //slider事件
     $(window).scroll(function () {
         //    console.log($(this));
-        console.log($(this).scrollTop());
+        // console.log($(this).scrollTop());
         if ($(this).scrollTop() != 0) {
             $('#slider_box3').removeClass('hide');
         } else {
@@ -132,5 +132,43 @@ $(function () {
         $('#slider_box1 a').removeClass('hide');
     }, function () {
         $('#slider_box1 a').addClass('hide');
-    })
+    });
+    //下半部分图片延迟加载
+    //获取到obj的top值，left值
+    function getPos(obj) {
+        var l = 0;
+        var t = 0;
+
+        while (obj) {
+            l += obj.offsetLeft;
+            t += obj.offsetTop;
+
+            obj = obj.offsetParent;
+        }
+
+        return {
+            left: l,
+            top: t
+        }
+    }
+    $(window).scroll(function () {
+        var aChangeImg = $('.bottom_box_template .can_change_img');
+        // console.log(aChangeImg);
+        var clientH = $(window).height();
+        var scrollT = $(this).scrollTop();
+        // console.log($(window).height());
+        // console.log(scrollT);
+        aChangeImg.each(function (index, value) {
+            // console.log(index);
+            // console.log(value.src);
+            var aChangeImgT = getPos(value).top;
+            // console.log(aChangeImgT);
+            // console.log(value.dataset.src);
+            var that=value;
+            if (scrollT + clientH >= aChangeImgT) {
+                value.src=value.dataset.src;
+            }
+        });
+
+    });
 });
