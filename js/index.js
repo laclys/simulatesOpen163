@@ -171,4 +171,15 @@ $(function () {
         });
 
     });
+    //当设备可视区在1314px像素以上时侧边栏出现，否则隐藏
+        $(window).resize(function () {
+        // alert(1);
+        var clientW = $(window).width()
+        console.log(clientW);
+        if(clientW>=1314){
+            $('.slider').css('display','block');
+        }else{
+            $('.slider').css('display','none');
+        }
+    });
 });

@@ -57,7 +57,7 @@ a {
   color: #fff;
 }
 body.min_body {
-  min-width: 960px;
+  min-width: 1180px;
   overflow-x: hidden;
   /*禁止横向滚轮*/
 }
@@ -658,7 +658,7 @@ body {
   position: relative;
 }
 .fixed_ads .inner img {
-  width: 1200px;
+  width: 1180px;
 }
 .fixed_ads .inner a {
   width: 35px;
