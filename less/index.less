@@ -96,6 +96,117 @@
         body {
             width: 100%;
             // background: deepskyblue;
+            /*登陆/注册蒙版*/
+            #mask {
+                width: 0;
+                height: 0;
+                z-index: -99999;
+                background: rgba(0, 0, 0, 0.5);
+                .pos(f);
+                top: 0;
+                left: 0;
+                div.login_box {
+                    width: 420px;
+                    height: 274px;
+                    .pos(a);
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    margin: auto;
+                    background: white;
+                    overflow: hidden;
+                    display: none;
+                    p {
+                        height: 43px;
+                        width: 420px;
+                        text-align: center;
+                        line-height: 43px;
+                        font-size: 22px;
+                        color: white;
+                        background: #286a46;
+                        .pos(r);
+                        #close_login{
+                            .pos(a);
+                            top: -5px;
+                            right: 10px;
+                            transition: 0.5s all ease;
+                            display: block;
+                            font-size: 15px;
+                            color: #999;
+                            width: 15px;
+                            height: 15px;
+                            cursor: pointer;
+                        }
+                         #close_login:hover{
+                             transform: rotateY(360deg);
+                            //  transform-origin:center;
+                         }
+                    }
+                    div.text_box {
+                        // height: 182px;
+                        width: 420px;
+                        margin-top: 26px;
+                        text-align: center;
+                        #email {
+                            width: 320px;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            box-sizing: border-box;
+                            padding-left: 8px;
+                            margin-bottom: 16px;
+                        }
+                        #psd {
+                            width: 320px;
+                            height: 30px;
+                            line-height: 30px;
+                            font-size: 16px;
+                            font-weight: bold;
+                            box-sizing: border-box;
+                            padding-left: 8px;
+                            margin-bottom: 16px;
+                        }
+                        div.error_msg {
+                            color: #fa5b5b;
+                            font-size: 12px;
+                            line-height: 20px;
+                            height: 20px;
+                            text-align: left;
+                            padding-bottom: 16px;
+                            padding-left: 50px;
+                            display: none;
+                            color: red;
+                        }
+                        div.login_button {
+                            width: 320px;
+                            height: 44px;
+                            line-height: 44px;
+                            font-size: 18px;
+                            cursor: default;
+                            color: white;
+                            background: #286a46;
+                            margin: 0 auto;
+                            border-radius: 4px;
+                            // transition: .5s;
+                            margin-bottom: 10px;
+                        }
+                        .regi_forget {
+                            width: 320px;
+                            height: 12px;
+                            margin: 0 auto;
+                            div {
+                                font-size: 12px;
+                                cursor: pointer;
+                                color: #999;
+                                font-size: 12px;
+                                line-height: 16px;
+                            }
+                        }
+                    }
+                }
+            }
         }
         
         .top_nav {
