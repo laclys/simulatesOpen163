@@ -18,6 +18,8 @@ Please use IE9+
 
 ![](demo5.jpg)
 
+![](demo6.jpg)
+
 ### DEMO
 
 https://laclys.github.io/simulatesOpen163/
@@ -26,8 +28,8 @@ https://laclys.github.io/simulatesOpen163/
 
 ### 施工中···TODO
 
-添加底部图片延迟加载功能
- 
 头部轮播图自动播放
- 
+
 优化性能
+
+移动端

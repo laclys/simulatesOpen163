@@ -946,6 +946,18 @@ body {
   color: #000000;
 }
 /*index下半部分*/
+.tedBox {
+  background: #970700;
+}
+.openClassBox {
+  background: #257397;
+}
+.showClassBox {
+  background: #4aa4fc;
+}
+.MOOCsBox {
+  background: #0064b7;
+}
 .bottom_box_template {
   height: 370px;
   background: #f0f0f0;
@@ -956,7 +968,6 @@ body {
 .bottom_box_template .inner .bottom_box_template_title {
   width: 180px;
   height: 315px;
-  background: #970700;
   position: absolute;
   top: 48px;
   left: 0;
@@ -989,6 +1000,12 @@ body {
 .bottom_box_template .inner .bottom_box_template_title ol li:nth-child(2n) {
   float: right;
   padding-right: 20px;
+}
+.bottom_box_template .inner .bottom_box_template_title ol .fourFonts:nth-child(2n+1) {
+  padding-right: 0;
+}
+.bottom_box_template .inner .bottom_box_template_title ol .fourFonts:nth-child(2n) {
+  padding-right: 0;
 }
 .bottom_box_template .inner .bottom_box_template_title i {
   font-size: 11px;
@@ -1109,4 +1126,143 @@ body {
 .bottom_box_template .inner .bottom_box_template_picList li i {
   font-size: 11px;
   color: #999999;
+}
+.role_for_class {
+  height: 48px;
+  background: #f0f0f0;
+}
+.role_for_class .inner {
+  background: white;
+  height: 48px;
+  text-align: center;
+}
+.role_for_class .inner span {
+  color: #333333;
+  font-size: 12px;
+  line-height: 48px;
+}
+.role_for_class .inner span a {
+  cursor: pointer;
+  color: #09924b;
+}
+.bottom_mgs {
+  height: 331px;
+  background: #f0f0f0;
+}
+.bottom_mgs .inner {
+  height: 331px;
+}
+.bottom_mgs .inner p {
+  padding-top: 70px;
+  padding-bottom: 18px;
+  font-size: 18px;
+  line-height: 17px;
+  color: #666666;
+}
+.bottom_mgs .inner p span {
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.bottom_mgs .inner ul li {
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-right: 42px;
+  margin-bottom: 28px;
+}
+.bottom_mgs .inner ul li img {
+  width: 100%;
+  height: 100%;
+}
+.bottom_mgs .inner ul li:nth-of-type(10n+10) {
+  margin-right: 0;
+}
+.bottom_share {
+  height: 155px;
+  background: #f0f0f0;
+}
+.bottom_share .inner {
+  height: 155px;
+  border-top: 1px solid #e5e5e5;
+}
+.bottom_share .inner p {
+  padding-top: 34px;
+  padding-bottom: 33px;
+  font-size: 18px;
+  line-height: 17px;
+  color: #666666;
+}
+.bottom_share .inner p span {
+  font-size: 12px;
+  padding-top: 5px;
+  padding-left: 10px;
+}
+.bottom_share .inner ul li {
+  width: 80px;
+  height: 50px;
+  cursor: pointer;
+  overflow: hidden;
+  margin-right: 45px;
+}
+.bottom_share .inner ul li img {
+  width: 100%;
+  height: 100%;
+}
+.thx_for {
+  height: 240px;
+  background: #f0f0f0;
+}
+.thx_for .inner {
+  border-top: 1px solid #e5e5e5;
+  height: 240px;
+}
+.thx_for .inner p {
+  padding-top: 36px;
+  padding-bottom: 13px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+.thx_for .inner article {
+  line-height: 20px;
+  font-size: 10px;
+  text-indent: 2em;
+  color: #666666;
+}
+footer {
+  height: 122px;
+  background: #e6e6e6;
+}
+footer .inner {
+  position: relative;
+  height: 122px;
+  box-sizing: border-box;
+  padding: 23px 0;
+}
+footer .inner ol li {
+  float: left;
+  margin-left: 5px;
+  margin-bottom: 16px;
+}
+footer .inner ol li:hover {
+  text-decoration: underline;
+}
+footer .inner ol li a {
+  color: #666666;
+  font-size: 12px;
+}
+footer .inner p {
+  color: #999999;
+  line-height: 18px;
+  font-size: 12px;
+}
+footer .inner .footer_img {
+  height: 23px;
+  width: 315px;
+  background: url(../img/footer.png) no-repeat;
+  position: absolute;
+  top: 60px;
+  right: 0;
 }
