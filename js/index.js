@@ -164,22 +164,22 @@ $(function () {
             var aChangeImgT = getPos(value).top;
             // console.log(aChangeImgT);
             // console.log(value.dataset.src);
-            var that=value;
+            var that = value;
             if (scrollT + clientH >= aChangeImgT) {
-                value.src=value.dataset.src;
+                value.src = value.dataset.src;
             }
         });
 
     });
     //当设备可视区在1314px像素以上时侧边栏出现，否则隐藏
-        $(window).resize(function () {
+    $(window).resize(function () {
         // alert(1);
         var clientW = $(window).width()
         console.log(clientW);
-        if(clientW>=1314){
-            $('.slider').css('display','block');
-        }else{
-            $('.slider').css('display','none');
+        if (clientW >= 1314) {
+            $('.slider').css('display', 'block');
+        } else {
+            $('.slider').css('display', 'none');
         }
     });
 });
