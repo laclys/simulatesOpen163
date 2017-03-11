@@ -182,4 +182,22 @@ $(function () {
             $('.slider').css('display', 'none');
         }
     });
+    //点击登录注册
+    $('#loginOpen163').click(function () {
+        //可视区宽高
+        var clientW = $(window).width();
+        var clientH = $(window).height();
+        $('#mask').css({
+            'width': clientW,
+            'height': clientH,
+            'z-index': 99999
+        });
+        $('#login_box').fadeIn();
+        $('#close_login').click(function(){
+            $('#mask').animate({
+                'z-index': -99999
+            });
+            $('#login_box').fadeOut();
+        });
+    })
 });

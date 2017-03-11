@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="author" content="ZhangYangyang" />
     <title>open163</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./css/index.css">
@@ -12,6 +13,23 @@
 </head>
 
 <body class="min_body">
+    <div id="mask">
+        <div class="login_box" id="login_box">
+            <p>网易公开课
+                <span id="close_login">X</span>
+            </p>
+            <div class="text_box">
+                <input type="email" id="email" placeholder="邮箱">
+                <input type="text" id="psd"  placeholder="密码">
+                <div class="error_msg">邮箱地址或密码错误</div>
+                <div class="login_button">登陆</div>
+                <div class="regi_forget clearfix">
+                    <div class="fl">忘记密码</div>
+                    <div class="fr">去注册</div>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="top_nav">
         <div class="inner clearfix">
             <span class="fl_top_span">
@@ -50,7 +68,7 @@
             </ul>
             <div class="fr_login_text">
                 <span>欢迎来到网易公开课！</span>
-                <span>登陆/注册</span>
+                <span id="loginOpen163">登陆/注册</span>
             </div>
             <div class="fr_login_ok hide">
                 <span>laclys@126.com</span>
