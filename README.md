@@ -2,13 +2,17 @@
 
 simulates Open163/index(网易公开课）
 
-#### ( less+JQuery+H5 )
-
 This project is just for learning.
+
+#### Desktop(Less+JQuery+H5)
 
 Please use IE9+
 
-### 效果如图所示
+#### Mobile(/simulatesOpen163)(Sass+Zepto.js+H5)
+
+Please use chrome mobile device mode
+
+### Desktop效果如图所示
 
 ![](demo1.jpg)
 
@@ -20,9 +24,31 @@ Please use IE9+
 
 ![](demo6.jpg)
 
+### Mobile效果如图所示
+
+![](demo7.jpg)
+
+![](demo8.jpg)
+
+![](demo9.jpg)
+
+![](demo10.jpg)
+
+![](demo11.jpg)
+
 ### DEMO
 
+Desktop:
+
 https://laclys.github.io/simulatesOpen163/
+
+Mobile:
+
+https://laclys.github.io/simulatesOpen163/open_163_mobile_device/
+
+	scan it on mobile device
+
+![](QRcode.png)
 
 ------
 
@@ -32,4 +58,4 @@ https://laclys.github.io/simulatesOpen163/
 
 优化性能
 
-移动端
+~~移动端~~
