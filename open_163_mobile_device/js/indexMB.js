@@ -30,7 +30,7 @@ window.onload = function () {
     console.log('header Height----' + headerH);
     $(window).on('scroll', function () {
         // console.log('scrolling');
-        console.log($(this).scrollTop());
+        // console.log($(this).scrollTop());
         if ($(this).scrollTop() >= headerH) {
             $('#top_nav').css({
                 'position': 'fixed',
@@ -45,5 +45,63 @@ window.onload = function () {
                 'position': 'relative'
             });
         }
-    })
+    });
+    //nav左右滑动
+    $('#top_nav').on('touchstart', function (ev) {
+        var navListUl = $('#navList');
+        //按下时left值
+        var nowL = parseFloat(navListUl.css('left'));
+        console.log('nowL:' + nowL);
+        //按下时x轴坐标点
+        var pageX = ev.touches[0].clientX;
+        console.log('x轴坐标点------' + pageX);
+        $(document).on('touchmove', function (ev) {
+            //平移量
+            var l = ev.touches[0].clientX - pageX + nowL;
+            // console.log('平移量----'+l);
+            var ulLeftMax = parseFloat(navListUl.css('width')) - $(document).width();
+            console.log(ulLeftMax);
+            if (l >= 0) {
+                l = 0;
+            } else if (l <= -ulLeftMax) {
+                l = -ulLeftMax;
+            }
+            navListUl.css('left', l);
+        });
+        $(document).on('touchend', function (ev) {
+            //移除touchmove和touchend事件
+            $(document).off('touchmove');
+            $(document).off('touchend');
+        });
+    });
+    //nav_more事件
+    var more_flag = false;
+    $('#btn_more').tap(function () {
+        //打开导航栏
+        var oNav = $('#top_nav');
+        var nav_inner = $('#nav_inner');
+        var list_boxDiv = $('#list_box_div');
+        var navListUl = $('#navList');
+        if (!more_flag) {
+            oNav.css('height', '8.9rem');
+            nav_inner.css('height', '8.9rem');
+            list_boxDiv.css('height', '8.9rem');
+            navListUl.css('height', '8.9rem');
+            navListUl.css('width', '100%');
+            navListUl.css('position', 'static');
+            //改变小箭头伪类before方向
+            $('#icon-more').addClass('rotate');
+            more_flag = !more_flag;
+        } else {
+            //收缩导航栏
+            oNav.css('height', '');
+            nav_inner.css('height', '');
+            list_boxDiv.css('height', '');
+            navListUl.css('height', '');
+            navListUl.css('width', '');
+            navListUl.css('position', '');
+            more_flag = !more_flag;
+            $('#icon-more').removeClass('rotate');
+        }
+    });
 };

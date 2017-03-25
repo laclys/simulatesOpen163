@@ -20,7 +20,14 @@
   -moz-osx-font-smoothing: grayscale; }
 
 .icon-more_unfold:before {
-  content: "\e900"; }
+  content: "\e900";
+  display: inline-block; }
+
+.icon-more_unfold.rotate:before {
+  content: "\e900";
+  display: inline-block;
+  transform: rotateX(180deg);
+  -webkit-transform: -webkit-rotateX(180deg); }
 
 /*------------------------*/
 * {
@@ -65,15 +72,17 @@ nav {
   position: relative; }
   nav div.inner {
     margin: 0 0.26235rem;
-    height: 2.90123rem;
-    background: yellow; }
+    height: 2.90123rem; }
     nav div.inner div.list_box {
       width: 88%;
       height: 2.90123rem;
       background: #ffffff;
       overflow: hidden; }
       nav div.inner div.list_box ul {
-        width: 900%; }
+        width: 56.25rem;
+        height: 2.90123rem;
+        position: relative;
+        left: 0; }
         nav div.inner div.list_box ul li {
           line-height: 2.90123rem;
           height: 2.90123rem;
