@@ -19,7 +19,7 @@ window.onload = function () {
     navList.removeClass('on');
     navList.eq(localStorage.now_swiper).addClass('on');
     //导航栏点击事件
-    navList.tap(function () {
+    navList.on('click',function () {
         console.log('点击第' + $(this).index() + '页');
         mySwiper.slideTo($(this).index());
         //并将该页面编号存入localStorage
@@ -76,7 +76,7 @@ window.onload = function () {
     });
     //nav_more事件
     var more_flag = false;
-    $('#btn_more').tap(function () {
+    $('#btn_more').on('click',function () {
         //打开导航栏
         var oNav = $('#top_nav');
         var nav_inner = $('#nav_inner');
