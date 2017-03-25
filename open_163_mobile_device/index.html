@@ -15,6 +15,7 @@
     <script src="./js/swiper.min.js"></script>
     <script src="./js/indexMB.js"></script>
     <script>
+        //自适应
         (function () {
             function initFontSize() {
                 document.documentElement.style.fontSize = 15 * document.documentElement.clientWidth / 375 + 'px';
@@ -30,7 +31,7 @@
     <header>
         <a href="#"><img src="./img/logo.png" alt=""></a>
     </header>
-    <nav>
+    <nav id="top_nav">
         <div class="inner clearfix">
             <div class="list_box">
                 <ul id="navList">
@@ -52,6 +53,7 @@
             </div>
         </div>
     </nav>
+    <div id="fake_nav"></div>
     <div class="swiper-container">
         <div class="swiper-wrapper">
             <div class="page1 swiper-slide">

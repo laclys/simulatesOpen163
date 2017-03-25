@@ -61,7 +61,8 @@ header {
 
 nav {
   height: 2.90123rem;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   nav div.inner {
     margin: 0 0.26235rem;
     height: 2.90123rem;
@@ -91,6 +92,12 @@ nav {
       nav div.inner div.btn_more span {
         color: #555555;
         font-size: 0.58642rem; }
+
+#fake_nav {
+  height: 2.90123rem;
+  width: 100%;
+  position: relative;
+  display: none; }
 
 div.swiper-slide {
   width: 100%; }
