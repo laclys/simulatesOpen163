@@ -31,6 +31,14 @@
     
     .icon-more_unfold:before {
         content: "\e900";
+        display: inline-block;
+    }
+    
+    .icon-more_unfold.rotate:before {
+        content: "\e900";
+        display: inline-block;
+        transform: rotateX(180deg);
+        -webkit-transform: -webkit-rotateX(180deg);
     }
     /*------------------------*/
     
@@ -84,10 +92,11 @@
     nav {
         height: pxTorem(94px);
         width: 100%;
+        position: relative;
         div.inner {
             margin: 0 pxTorem(8.5px);
             height: pxTorem(94px);
-            background: yellow;
+            // background: yellow;
             div.list_box {
                 width: 88%;
                 height: pxTorem(94px);
@@ -95,7 +104,10 @@
                 @extend .fl;
                 overflow: hidden;
                 ul {
-                    width: 900%;
+                    width: 56.25rem;
+                    height: pxTorem(94px);
+                    position: relative;
+                    left: 0;
                     li {
                         line-height: pxTorem(94px);
                         height: pxTorem(94px);
@@ -123,6 +135,13 @@
                 }
             }
         }
+    }
+    
+    #fake_nav {
+        height: pxTorem(94px);
+        width: 100%;
+        position: relative;
+        display: none;
     }
     
     div.swiper-slide {
