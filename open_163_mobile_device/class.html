@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="zyy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0, user-scalable=0/no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>open163</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" href="./css/class.css">
+    <script src="./js/zepto.js"></script>
+    <script src="./js/touch.js"></script>
+    <script src="./js/fx.js"></script>
+    <script src="./js/class.js"></script>
+    <script>
+        //自适应
+        (function () {
+            function initFontSize() {
+                document.documentElement.style.fontSize = 15 * document.documentElement.clientWidth / 375 + 'px';
+            }
+            initFontSize();
+
+            window.addEventListener('resize', initFontSize, false);
+        })();
+    </script>
+</head>
+
+<body>
+    <header>
+        <a href="#"><img src="./img/logo.png" alt=""></a>
+    </header>
+    <!--vedio暂用图片代替-->
+    <div class="vedio_img"></div>
+    <div class="show_share">
+        <span>播放：3306次</span>
+        <a href="javascript:;" class="share">
+            <img src="./img/class-share.png" alt="">
+        </a>
+        <a href="javascript:;" class="dwon">
+            <img src="./img/class-dwon.png" alt="">
+        </a>
+    </div>
+    <div class="app_ads">
+        <a href="javascript:;">
+            <span>打开网易公开课APP，提升3倍流畅度！</span>
+        </a>
+    </div>
+    <div class="introduce">
+        <p class="title">抗敏牙膏的原理是怎样的？</p>
+        <p class="tag">化学</p>
+        <span class="content">深受鼻炎困扰的人曾尝试过一些喷剂，但那只能够缓解症状而不能根治病因，因此它一直伴随着鼻炎患者。抗敏牙膏也是如此：它只是麻痹了神经，并不能修复被腐蚀的牙釉质，而那才是导致敏感的原因。灯红酒绿之于空虚的内心和麻木的感情，也是如此。（感谢圆桌字幕组译制，网易公开课编辑整理）</span>
+    </div>
+    <div class="arrow" id="arrow">
+        <img src="./img/class-arrow.png" alt="" id="arrow_img">
+    </div>
+</body>

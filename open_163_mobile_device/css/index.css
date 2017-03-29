@@ -238,34 +238,34 @@ div.swiper-slide {
       font-size: 0.55556rem;
       margin-top: 0.46296rem; }
 
-.page3 section.content_box {
+.page3 section.content_box, .page4 section.content_box {
   height: 8.33333rem;
   width: 100%;
   border-top: 0.06173rem solid #efefef;
   background: #f8f8f8; }
-  .page3 section.content_box .inner {
+  .page3 section.content_box .inner, .page4 section.content_box .inner {
     margin: 0 0.83333rem;
     height: 8.33333rem;
     position: relative; }
-    .page3 section.content_box .inner img.i1 {
+    .page3 section.content_box .inner img.i1, .page4 section.content_box .inner img.i1 {
       position: absolute;
       top: 2.0679rem;
       left: 0;
       width: 7.5rem;
       z-index: 3; }
-    .page3 section.content_box .inner img.i2 {
+    .page3 section.content_box .inner img.i2, .page4 section.content_box .inner img.i2 {
       position: absolute;
       top: 1.7284rem;
       left: 0.33951rem;
       width: 6.7284rem;
       z-index: 2; }
-    .page3 section.content_box .inner img.i3 {
+    .page3 section.content_box .inner img.i3, .page4 section.content_box .inner img.i3 {
       position: absolute;
       top: 1.38889rem;
       left: 0.70988rem;
       width: 5.95679rem;
       z-index: 1; }
-    .page3 section.content_box .inner p.title {
+    .page3 section.content_box .inner p.title, .page4 section.content_box .inner p.title {
       position: absolute;
       top: 1.85185rem;
       left: 8.33333rem;
@@ -273,7 +273,7 @@ div.swiper-slide {
       height: 2.5rem;
       font-size: 1.01852rem;
       line-height: 1.32716rem; }
-    .page3 section.content_box .inner p.content {
+    .page3 section.content_box .inner p.content, .page4 section.content_box .inner p.content {
       position: absolute;
       top: 4.96914rem;
       left: 8.39506rem;
