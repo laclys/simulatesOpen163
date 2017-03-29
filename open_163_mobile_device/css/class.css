@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+a {
+  text-decoration: none;
+  color: black; }
+
+.clearfix:after {
+  clear: both;
+  content: '';
+  display: block; }
+
+.clearfix {
+  zoom: 1; }
+
+.fl {
+  float: left; }
+
+.fr {
+  float: right; }
+
+html {
+  font-size: 15px; }
+
+header {
+  height: 3.14815rem;
+  width: 100%;
+  background-color: #286a46; }
+  header a img {
+    width: 9.01235rem;
+    height: 1.7284rem;
+    margin-left: 0.80247rem;
+    margin-top: 0.61728rem; }
+
+.vedio_img {
+  width: 25rem;
+  height: 14.29012rem;
+  background: url(../img/class-vedio.png);
+  background-size: contain; }
+
+.show_share {
+  width: 100%;
+  height: 2.80864rem;
+  background-color: #eeeeee;
+  position: relative; }
+  .show_share span {
+    font-size: 0.67901rem;
+    line-height: 2.80864rem;
+    padding-left: 1.01852rem;
+    color: #9b9b9b; }
+  .show_share a.share img {
+    position: absolute;
+    right: 3.39506rem;
+    top: 0.52469rem;
+    width: 1.11111rem; }
+  .show_share a.dwon img {
+    position: absolute;
+    right: 0.52469rem;
+    top: 0.52469rem;
+    width: 1.11111rem; }
+
+div.app_ads {
+  width: 23.05556rem;
+  height: 2.87037rem;
+  margin: 0.92593rem auto;
+  background-color: #77ba91;
+  border-radius: 0.24691rem;
+  text-align: center; }
+  div.app_ads span {
+    font-size: 0.8642rem;
+    color: white;
+    line-height: 2.87037rem; }
+
+.introduce {
+  width: 23.05556rem;
+  margin: 0.21605rem auto;
+  height: 9.87654rem;
+  overflow: hidden; }
+  .introduce p.title {
+    font-size: 1.2037rem;
+    height: 1.2037rem;
+    line-height: 1.2037rem; }
+  .introduce p.tag {
+    font-size: 0.83333rem;
+    height: 2.0679rem;
+    line-height: 2.0679rem; }
+  .introduce span.content {
+    font-size: 0.7716rem;
+    line-height: 1.08025rem; }
+
+div.arrow {
+  width: 100%;
+  height: 2.31481rem;
+  position: relative;
+  border-bottom: 0.12346rem solid #e5e5e5; }
+  div.arrow img {
+    width: 1.11111rem;
+    height: 0.61728rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    transform: rotate(180deg); }
+
+/*# sourceMappingURL=class.css.map */
