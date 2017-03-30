@@ -18,7 +18,7 @@ a {
 .fl {
   float: left; }
 
-.fr {
+.fr, .pop_messages li h4 em, .pop_messages li h4 img {
   float: right; }
 
 html {
@@ -105,5 +105,36 @@ div.arrow {
     bottom: 0;
     margin: auto;
     transform: rotate(180deg); }
+
+.pop_messages {
+  margin-bottom: 0.92593rem;
+  border-bottom: 0.06173rem solid #e5e5e5; }
+  .pop_messages p {
+    margin-top: 1.14198rem;
+    text-align: center;
+    font-size: 1.01852rem;
+    height: 1.01852rem;
+    line-height: 1.01852rem;
+    margin-bottom: 1.48148rem; }
+  .pop_messages li {
+    margin-left: 1.01852rem;
+    position: relative; }
+    .pop_messages li h4 {
+      font-size: 0.64815rem;
+      color: #6a9673; }
+      .pop_messages li h4 i {
+        font-style: normal;
+        color: #9b9b9b; }
+      .pop_messages li h4 em {
+        font-style: normal;
+        color: #9b9b9b; }
+      .pop_messages li h4 img {
+        width: 0.92593rem;
+        height: 0.92593rem;
+        margin-left: 0.52469rem;
+        margin-right: 0.95679rem; }
+    .pop_messages li div.content {
+      line-height: 2.53086rem;
+      font-size: 0.83333rem; }
 
 /*# sourceMappingURL=class.css.map */

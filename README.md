@@ -36,6 +36,8 @@ Please use chrome mobile device mode
 
 ![](demo11.jpg)
 
+![](demo12.jpg)
+
 ### DEMO
 
 Desktop:
