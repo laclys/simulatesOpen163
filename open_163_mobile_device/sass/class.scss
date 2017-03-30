@@ -142,3 +142,44 @@
                 transform: rotate(180deg);
             }
         }
+        
+        .pop_messages {
+            margin-bottom: pxTorem(30px);
+            border-bottom: pxTorem(2px) solid #e5e5e5;
+            p {
+                margin-top: pxTorem(37px);
+                text-align: center;
+                font-size: pxTorem(33px);
+                height: pxTorem(33px);
+                line-height: pxTorem(33px);
+                margin-bottom: pxTorem(48px);
+            }
+            li {
+                margin-left: pxTorem(33px);
+                position: relative;
+                h4 {
+                    font-size: pxTorem(21px);
+                    color: #6a9673;
+                    i {
+                        font-style: normal;
+                        color: #9b9b9b;
+                    }
+                    em {
+                        font-style: normal;
+                        color: #9b9b9b;
+                        @extend .fr;
+                    }
+                    img {
+                        @extend .fr;
+                        width: pxTorem(30px);
+                        height: pxTorem(30px);
+                        margin-left: pxTorem(17px);
+                        margin-right: pxTorem(31px);
+                    }
+                }
+                div.content {
+                    line-height: pxTorem(82px);
+                    font-size: pxTorem(27px);
+                }
+            }
+        }
