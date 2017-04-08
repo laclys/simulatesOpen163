@@ -56,8 +56,6 @@ https://laclys.github.io/simulatesOpen163/open_163_mobile_device/
 
 ### 施工中···TODO
 
-头部轮播图自动播放
+~~移动端~~
 
 优化性能
-
-~~移动端~~
